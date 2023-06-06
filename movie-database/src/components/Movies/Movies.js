@@ -1,6 +1,7 @@
 import { nanoid } from "nanoid";
 import Movie from "../Movie/Movie";
 import styles from "./Movies.module.css";
+import Button from "../Button/ui/Button";
 
 function Movies(props) {
   // Destructing props: state movies
@@ -32,7 +33,7 @@ function Movies(props) {
               return <Movie key={movie.id} movie={movie} />;
             })}
           </div>
-          <button onClick={handleClick}>Add Movie</button>
+          <Button variant="primary" size="lg" onClick={handleClick}>Add Movie</Button>
         </section>
       </div>
     </div>

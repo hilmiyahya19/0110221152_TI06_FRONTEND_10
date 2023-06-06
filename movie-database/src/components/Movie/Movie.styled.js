@@ -20,11 +20,11 @@ const StyledMovie = styled.div`
     color: #64748b;
   }
 
-  @media screen and (min-width:768px){
+  @media (min-width:768px){
     flex-basis: 50%;
   }
 
-  @media screen (min-width:992px){
+  @media (min-width:992px){
     flex-basis: 25%;
     padding: 1rem;
   }

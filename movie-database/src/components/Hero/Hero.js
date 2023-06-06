@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import styles from "./Hero.module.css";
 import { useEffect,useState } from "react";
 import Button from "../Button/ui/Button";
+import StyledHero from "./Hero.styled"
 
 function Hero() {
   // Membuat state movie
@@ -24,27 +24,26 @@ function Hero() {
   console.log(movie);
 
   return (
-    <div className={styles.container}>
-      <section className={styles.hero}>
-        <div className={styles.hero__left}>
-          <h2 className={styles.hero__title}>{movie.Title}</h2>
-          <h3 className={styles.hero__genre}>
+    <StyledHero>
+      <section>
+        <div className="hero__left">
+          <h2>{movie.Title}</h2>
+          <h3>
             {movie.Genre}
           </h3>
-          <p className={styles.hero__description}>
+          <p>
           {movie.Plot}
           </p>
           <Button variant="secondary">Watch</Button>
         </div>
         <div className="hero__right">
           <img
-            className={styles.hero__image}
-            src={movie.Poster}
+            src="https://picsum.photos/536/354"
             alt={movie.Title}
           />
         </div>
       </section>
-    </div>
+    </StyledHero>
   );
 }
 

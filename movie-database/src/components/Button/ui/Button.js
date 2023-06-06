@@ -23,6 +23,15 @@ ${function (props){
             `
     );
 }}
+
+// props size
+${(props) => {
+    if(props.size) {
+        return props.theme.sizes[props.size];
+    } else {
+        return props.theme.sizes["md"];
+    }
+}}
 `;
 
 export default Button;

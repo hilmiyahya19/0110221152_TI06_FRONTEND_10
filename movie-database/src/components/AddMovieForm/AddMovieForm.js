@@ -201,7 +201,7 @@ function AddMovieForm(props) {
             </div>
 
             <div>
-              <Button full={true}>Add Movie</Button>
+              <Button size="" full={true}>Add Movie</Button>
             </div>
           </form>
         </div>
